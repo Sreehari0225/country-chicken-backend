@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'maven3.9.12'
-        jdk 'java17'
+        maven 'maven3.9.15'
+        jdk 'java21'
     }
 
     environment {
@@ -16,8 +16,8 @@ pipeline {
         DOCKER_REPO      = 'docker-releases'
 
         GROUP_ID         = 'com.countrychicken'
-        VERSION          = ''
-        JAR_NAME         = ''
+        VERSION          = '1.0.0'
+        JAR_NAME         = 'country-chicken-backend-1.0.0.jar'
     }
 
     stages {
@@ -25,7 +25,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: ''
+                    url: 'https://github.com/Sreehari0225/country-chicken-backend.git'
             }
         }
 
