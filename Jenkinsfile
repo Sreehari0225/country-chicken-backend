@@ -9,14 +9,14 @@ pipeline {
     environment {
         APP_NAME         = 'country-chicken-backend'
 
-        NEXUS_MAVEN_URL  = '3.95.213.119:8081'
-        NEXUS_DOCKER_URL = '3.95.213.119:8082'
+        NEXUS_MAVEN_URL  = '54.204.72.243:8081'
+        NEXUS_DOCKER_URL = '54.204.72.243:8082'
 
         MAVEN_REPO       = 'maven-releases'
         DOCKER_REPO      = 'docker-releases'
 
         GROUP_ID         = 'com.countrychicken'
-        VERSION          = '1.0.2'
+        VERSION          = '1.0.0'
         JAR_NAME         = 'country-chicken-backend-1.0.0.jar'
     }
 
